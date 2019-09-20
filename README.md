@@ -1,39 +1,47 @@
-# node-js-getting-started
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+# Next.js w/ Custom Express Server example for Heroku
 
-This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+## How to use
 
-## Running Locally
-
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cli.heroku.com/) installed.
-
-```sh
-$ git clone https://github.com/heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
-$ npm install
-$ npm start
+```bash
+git clone https://github.com/mars/heroku-nextjs-custom-server-express
+cd heroku-nextjs-custom-server-express
 ```
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+Install it and run:
 
-## Deploying to Heroku
-
+```bash
+npm install
+npm run dev
 ```
-$ heroku create
-$ git push heroku master
-$ heroku open
+
+Then, visit [http://localhost:3000/](http://localhost:3000/) in your web browser.
+
+Deploy it to the cloud with [Heroku](https://www.heroku.com):
+
+⚠️ *Requires installing [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)*
+
+```bash
+heroku create
+git add .
+git commit -m 'Next.js app on Heroku'
+git push heroku master
 ```
-or
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+Heroku auto-detects that this is a Node.js app, and then executes:
 
-## Documentation
+* `npm install`
+* `npm run build`
+* and then launches the app `NODE_ENV=production npm start`.
 
-For more information about using Node.js on Heroku, see these Dev Center articles:
+👉 An example deployment of master is running at [https://nextjs-server.herokuapp.com/](https://nextjs-server.herokuapp.com/).
 
-- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+## The idea behind the example
+
+*A version of [Next's example/custom-server-express](https://github.com/zeit/next.js/tree/master/examples/custom-server-express) revised to [deploy to Heroku](https://github.com/mars/heroku-nextjs).*
+
+Most of the times the default Next server will be enough but sometimes you want to run your own server to customize routes or other kind of the app behavior. Next provides a [Custom server and routing](https://github.com/zeit/next.js#custom-server-and-routing) so you can customize as much as you want.
+
+Because the Next.js server is just a node.js module you can combine it with any other part of the node.js ecosystem. in this case we are using express to build a custom router on top of Next.
+
+The example shows a server that serves the component living in `pages/a.js` when the route `/b` is requested and `pages/b.js` when the route `/a` is accessed. This is obviously a non-standard routing strategy. You can see how this custom routing is being made inside `server.js`.
