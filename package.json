@@ -1,19 +1,31 @@
 {
   "name": "octacure",
-  "version": "1.0.0",
-  "description": "octacure website",
+  "version": "0.0.1",
+  "description": "Octacure app & web",
+  "engines": {
+    "node": "10.x"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goldensky09/octacure.git"
+    "url": "https://github.com/heroku/node-js-getting-started"
   },
-  "author": "goldensky09",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/goldensky09/octacure/issues"
-  },
-  "homepage": "https://github.com/goldensky09/octacure#readme"
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
