@@ -1,0 +1,19 @@
+{
+  "name": "octacure",
+  "version": "1.0.0",
+  "description": "octacure website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goldensky09/octacure.git"
+  },
+  "author": "goldensky09",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goldensky09/octacure/issues"
+  },
+  "homepage": "https://github.com/goldensky09/octacure#readme"
+}
