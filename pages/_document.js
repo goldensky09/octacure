@@ -1,4 +1,4 @@
-import Document, { Head, Main, NextScript } from 'next/document'
+import Document, { Head, Main, NextScript } from 'next/document';
 
 export default class MyDocument extends Document {
     static async getInitialProps(ctx) {
@@ -12,16 +12,18 @@ export default class MyDocument extends Document {
         return (
             <html>
                 <Head>
-                    <link rel="stylesheet" href="/static/assets/css/main.css" />
+                    
                     <link rel="stylesheet" href="/static/assets/css/font-awesome.min.css" />
+                    <link rel="stylesheet" href="/static/assets/css/main.css" />
                     <script src="/static/assets/js/jquery.min.js"></script>
                     <script src="/static/assets/js/jquery.scrolly.min.js"></script>
                     <script src="/static/assets/js/jquery.scrollex.min.js"></script>
+                    <script src="/static/assets/js/jquery.poptrox.min.js"></script>
                     <script src="/static/assets/js/skel.min.js"></script>
                     <script src="/static/assets/js/util.js"></script>
-                    <script src="/static/assets/js/main.js"></script>
+                    
                 </Head>
-                <body>
+                <body id="top">
                     <Main />
                     <NextScript />
                     <style dangerouslySetInnerHTML={{__html: `.owl-carousel {display: block;}.post_slider_inner.owl-carousel > .item {

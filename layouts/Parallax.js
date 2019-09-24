@@ -1,9 +1,13 @@
-import Head from "./partials/Head";
+import Header from "./partials/Head";
 import Footer from "../components/Footer";
+import Head from 'next/head';
 
 const Parallax = props => (
     <div>
-        <Head />
+        <Head>
+            <script src="/static/assets/js/home-main.js"></script>
+        </Head>
+        <Header />
         {props.children}
         <Footer />
     </div>

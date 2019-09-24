@@ -1,5 +1,5 @@
 export default () =>
-    <section id="banner" className="bg-img" data-bg="yoga.jpg">
+    <section id="banner" className="bg-img home" data-bg="yoga.jpg">
         <div className="inner">
             <header>
                 <h1>This is Octacure</h1>

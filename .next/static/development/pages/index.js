@@ -15,7 +15,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     id: "banner",
-    className: "bg-img",
+    className: "bg-img home",
     "data-bg": "yoga.jpg"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "inner"
@@ -122,7 +122,7 @@ __webpack_require__.r(__webpack_exports__);
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "logo"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "index.html"
+    href: "/"
   }, "Octacure ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "by RAINU"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "#menu"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Menu")));
@@ -148,12 +148,10 @@ __webpack_require__.r(__webpack_exports__);
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "links"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "index.html"
+    href: "/"
   }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "generic.html"
-  }, "Generic")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "elements.html"
-  }, "Elements"))));
+    href: "/events"
+  }, "Events"))));
 });
 
 /***/ }),
@@ -207,7 +205,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("header", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h2", null, "Nibh non lobortis mus nibh"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", null, "01.01.2017")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: "content"
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", null, "Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("footer", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
-        href: "/generic",
+        href: "/events",
         className: "button alt"
       }, "Learn More")))), this.props.next && react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
         href: "#" + this.props.next,
@@ -236,12 +234,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _partials_Head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./partials/Head */ "./layouts/partials/Head.js");
 /* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
+/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next-server/head */ "./node_modules/next-server/head.js");
+/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_server_head__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 
 
 var Parallax = function Parallax(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_partials_Head__WEBPACK_IMPORTED_MODULE_1__["default"], null), props.children, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_3___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
+    src: "/static/assets/js/home-main.js"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_partials_Head__WEBPACK_IMPORTED_MODULE_1__["default"], null), props.children, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Parallax);
@@ -10856,7 +10859,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!***********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fvikkumar1%2FWorkspace-Web%2Foctacure%2Fpages%2Findex.js ***!
   \***********************************************************************************************************************************/
@@ -10879,5 +10882,5 @@ module.exports = dll_1aef2d0bbc0d334d831c;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]));;
+},[[2,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=index.js.map

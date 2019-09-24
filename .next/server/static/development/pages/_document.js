@@ -2199,10 +2199,10 @@ function (_Document) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("html", null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_9__["Head"], null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
         rel: "stylesheet",
-        href: "/static/assets/css/main.css"
+        href: "/static/assets/css/font-awesome.min.css"
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
         rel: "stylesheet",
-        href: "/static/assets/css/font-awesome.min.css"
+        href: "/static/assets/css/main.css"
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("script", {
         src: "/static/assets/js/jquery.min.js"
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("script", {
@@ -2210,12 +2210,14 @@ function (_Document) {
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("script", {
         src: "/static/assets/js/jquery.scrollex.min.js"
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("script", {
+        src: "/static/assets/js/jquery.poptrox.min.js"
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("script", {
         src: "/static/assets/js/skel.min.js"
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("script", {
         src: "/static/assets/js/util.js"
-      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("script", {
-        src: "/static/assets/js/main.js"
-      })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("body", null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_9__["Main"], null), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_9__["NextScript"], null), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("style", {
+      })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("body", {
+        id: "top"
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_9__["Main"], null), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_9__["NextScript"], null), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("style", {
         dangerouslySetInnerHTML: {
           __html: ".owl-carousel {display: block;}.post_slider_inner.owl-carousel > .item {\n                        display: inline-block;\n                        width: 25%;\n                    }"
         }

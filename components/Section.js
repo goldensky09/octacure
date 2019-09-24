@@ -14,7 +14,7 @@ export default class Section extends React.Component {
                             <p>Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
                         </div>
                         <footer>
-                            <a href="/generic" className="button alt">Learn More</a>
+                            <a href="/events" className="button alt">Learn More</a>
                         </footer>
                     </article>
                 </div>
